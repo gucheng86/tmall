@@ -26,11 +26,28 @@
 ![表的关系](https://github.com/gucheng86/tmall/blob/master/img/table.png)
 
 # 5.原型设计  
->后端的分类管理  
+#### 后端  
+>分类管理  
 ![分类管理](https://github.com/gucheng86/tmall/blob/master/img/category.png)  
-  
->前端的首页  
-![首页](https://github.com/gucheng86/tmall/blob/master/img/fore.png)  
+>属性管理  
+![属性管理](https://github.com/gucheng86/tmall/blob/master/img/property.png)  
+>产品管理
+![产品管理](https://github.com/gucheng86/tmall/blob/master/img/product.png)   
+>订单管理     
+![订单管理](https://github.com/gucheng86/tmall/blob/master/img/order.png)  
+
+#### 前端  
+>首页  
+![首页](https://github.com/gucheng86/tmall/blob/master/img/fore.png)    
+>产品页
+![产品页](https://github.com/gucheng86/tmall/blob/master/img/products.png)  
+>购物车  
+![购物车](https://github.com/gucheng86/tmall/blob/master/img/cart.png)  
+>订单  
+![订单](https://github.com/gucheng86/tmall/blob/master/img/orders.png)    
+>结算  
+![结算](https://github.com/gucheng86/tmall/blob/master/img/buy.png)
+
   
 # 6.实体类设计  
 >实体类与数据库中的表相互映射。
