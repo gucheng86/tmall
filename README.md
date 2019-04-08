@@ -26,18 +26,25 @@
 >对前台需要用到的数据，进行管理维护。  
 
 # 4.表结构设计  
->表的关系如下
+>表的关系如下  
 ![表的关系](https://github.com/gucheng86/tmall/blob/master/img/table.png)
 
-# 5.原型设计
->后端的分类管理
+# 5.原型设计  
+>后端的分类管理  
 ![分类管理](https://github.com/gucheng86/tmall/blob/master/img/category.png)  
   
->前端的首页
+>前端的首页  
 ![首页](https://github.com/gucheng86/tmall/blob/master/img/fore.png)  
   
 #6.实体类设计  
 >实体类与数据库中的表相互映射。
-[实体类](
+[实体类](https://github.com/gucheng86/tmall/tree/master/src/tmall/bean)
+
+#7.DAO类设计  
+>####工具类  
+>[DBUtil类](https://github.com/gucheng86/tmall/blob/master/src/tmall/util/DBUtil.java)用于连接数据库，[DateUtil类](https://github.com/gucheng86/tmall/blob/master/src/tmall/util/DateUtil.java)主要是用于java.util.Date类与java.sql.Timestamp 类的互相转换。  
+
+>####DAO类  
+
 
 [回到顶部](#readme)
