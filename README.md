@@ -31,7 +31,7 @@
 ![分类管理](https://github.com/gucheng86/tmall/blob/master/img/category.png)  
 >属性管理  
 ![属性管理](https://github.com/gucheng86/tmall/blob/master/img/property.png)  
->产品管理
+>产品管理  
 ![产品管理](https://github.com/gucheng86/tmall/blob/master/img/product.png)   
 >订单管理     
 ![订单管理](https://github.com/gucheng86/tmall/blob/master/img/order.png)  
@@ -39,7 +39,7 @@
 #### 前端  
 >首页  
 ![首页](https://github.com/gucheng86/tmall/blob/master/img/fore.png)    
->产品页
+>产品  
 ![产品页](https://github.com/gucheng86/tmall/blob/master/img/products.png)  
 >购物车  
 ![购物车](https://github.com/gucheng86/tmall/blob/master/img/cart.png)  
