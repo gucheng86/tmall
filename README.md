@@ -10,11 +10,7 @@
 ### [2.3原型](#5原型)
 ### [2.4实体类设计](#6实体类设计)  
 ### [2.5DAO类设计](#7DAO类设计)
-### [2.6后台 - 分类管理](#8后台-分类管理)
-### [2.7后台 - 其他管理](#9后台-其他管理)
-### [2.8前台 - 首页](#10前台-首页)
-### [2.9前台 - 无需登录](#11前台-无需登录)  
-### [2.10前台 - 需要登录](#12前台-需要登录)
+### [2.6设计方法](#8设计方法)
 
 # 3.需求分析
 >需求分析主要分为3类
@@ -36,15 +32,22 @@
 >前端的首页  
 ![首页](https://github.com/gucheng86/tmall/blob/master/img/fore.png)  
   
-#6.实体类设计  
+# 6.实体类设计  
 >实体类与数据库中的表相互映射。
 [实体类](https://github.com/gucheng86/tmall/tree/master/src/tmall/bean)
 
-#7.DAO类设计  
->####工具类  
+# 7.DAO类设计  
+>#### 工具类  
 >[DBUtil类](https://github.com/gucheng86/tmall/blob/master/src/tmall/util/DBUtil.java)用于连接数据库，[DateUtil类](https://github.com/gucheng86/tmall/blob/master/src/tmall/util/DateUtil.java)主要是用于java.util.Date类与java.sql.Timestamp 类的互相转换。  
 
->####DAO类  
+>#### DAO类  
+>[DAO类](https://github.com/gucheng86/tmall/blob/master/src/tmall/DAO)专门用于进行数据库访问的操作。
 
+# 8.设计方法  
+>#### Filter配合Servlet（以后端为例）
+>  首先，任何访问路径都会经过Filter，在[Filter](https://github.com/gucheng86/tmall/blob/master/src/tmall/filter/BackServletFilter.java)中获取uri，取出uri中的特殊字符串，根据字符串来进行相应的跳转和方法调用。  
+>  然后，服务端跳转到Servlet，而所有的Servlet都会继承自定义的[BaseServlet](https://github.com/gucheng86/tmall/blob/master/src/tmall/servlet/ForeServlet.java。在BaseServlet中重写service()方法，通过反射调用相应的方法。  
+>  最后，每个方法都会返回一个字符串，在BaseServlet中根据字符串来进行下一步的操作。  
+  
 
 [回到顶部](#readme)
