@@ -63,8 +63,9 @@
 # 8.设计方法  
 >#### Filter配合Servlet（以后端为例）
 >  首先，任何访问路径都会经过Filter，在[Filter](https://github.com/gucheng86/tmall/blob/master/src/tmall/filter/BackServletFilter.java)中获取uri，取出uri中的特殊字符串，根据字符串来进行相应的跳转和方法调用。  
->  然后，服务端跳转到Servlet，而所有的Servlet都会继承自定义的[BaseServlet](https://github.com/gucheng86/tmall/blob/master/src/tmall/servlet/ForeServlet.java。在BaseServlet中重写service()方法，通过反射调用相应的方法。  
+>  然后，服务端跳转到Servlet，而所有的Servlet都会继承自定义的[BaseServlet](https://github.com/gucheng86/tmall/blob/master/src/tmall/servlet/ForeServlet.java)。在BaseServlet中重写service()方法，通过反射调用相应的方法。  
 >  最后，每个方法都会返回一个字符串，在BaseServlet中根据字符串来进行下一步的操作。  
   
 [更多详细内容请见文档](https://github.com/gucheng86/tmall/blob/master/%E5%A4%A9%E7%8C%AB%E6%95%B4%E7%AB%99J2EE.docx)  
+  
 [回到顶部](#readme)
